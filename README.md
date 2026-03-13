@@ -57,7 +57,8 @@ This project leverages a modern stack for blockchain development, frontend inter
   <a href="https://react.dev/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/></a>
   <a href="https://www.javascriptlang.org/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/JavaScript-007ACC?style=for-the-badge&logo=criptjava&logoColor=white" alt="TypeScript"/></a>
   <a href="https://hardhat.org/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Hardhat-FBB03B?style=for-the-badge&logo=hardhat&logoColor=white" alt="Hardhat"/></a>
-  <a href="https://ethereum.org/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white" alt="Ethereum (Sepolia)"/></a>
+  <a href="https://soliditylang.org/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" alt="Solidity"/></a>
+  <a href="https://soliditylang.org/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Polkadot-E6007A?style=for-the-badge&logo=polkadot&logoColor=white)" alt="Solidity"/></a>
   <a href="https://www.alchemy.com/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Alchemy-0089FF?style=for-the-badge&logo=alchemy&logoColor=white" alt="Alchemy"/></a>
   <a href="https://metamask.io/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/MetaMask-F6851B?style=for-the-badge&logo=metamask&logoColor=white" alt="MetaMask"/></a>
   <a href="https://www.pinata.cloud/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Pinata-13C9BE?style=for-the-badge&logo=pinata&logoColor=white" alt="Pinata"/></a>
