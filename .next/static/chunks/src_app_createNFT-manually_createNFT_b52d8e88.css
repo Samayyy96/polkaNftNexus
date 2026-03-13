@@ -1,0 +1,408 @@
+/* [project]/src/app/createNFT-manually/createNFT.css [app-client] (css) */
+body {
+  background: linear-gradient(135deg, #1a0a2e 0%, #0d0517 100%);
+  color: #e0e0e0;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.create-container {
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 950px;
+  position: relative;
+  z-index: 10;
+  background-color: #140a28b3;
+  border: 1px solid #0ff6;
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 0 20px #00ffff26;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.create-title {
+  font-family: Orbitron, sans-serif;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.connect-btn {
+  display: block;
+  margin: 0 auto 35px;
+  padding: 10px 25px;
+  font-family: Orbitron, sans-serif;
+  font-size: .95rem;
+  font-weight: 500;
+  background-color: #0000;
+  color: #0ff;
+  border: 1px solid #0ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color .3s, color .3s, box-shadow .3s;
+}
+
+.connect-btn:hover:not(:disabled) {
+  background-color: #00ffff1a;
+  box-shadow: 0 0 10px #0ff6;
+}
+
+.connect-btn:disabled {
+  color: #777;
+  border-color: #555;
+  background-color: #5553;
+  cursor: not-allowed;
+  opacity: .7;
+}
+
+.form-preview-wrapper {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  transition: all .5s ease-in-out;
+}
+
+.form-section {
+  flex: 100%;
+  max-width: 100%;
+  transition: flex-basis .5s ease-in-out, max-width .5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-section {
+  flex: 0 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: flex-basis .5s ease-in-out, opacity .5s ease-in-out .1s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0003;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px dashed #00ffff80;
+  min-height: 420px;
+}
+
+.form-preview-wrapper.has-preview .form-section {
+  flex-basis: 55%;
+  max-width: 55%;
+}
+
+.form-preview-wrapper.has-preview .preview-section {
+  flex-basis: 45%;
+  opacity: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 25px;
+  flex-grow: 1;
+}
+
+.input-field {
+  background-color: #0006;
+  border: 1px solid #4a4a6a;
+  border-radius: 6px;
+  padding: 14px 18px;
+  color: #e0e0e0;
+  font-size: 1rem;
+  font-family: Roboto, sans-serif;
+  transition: border-color .3s, box-shadow .3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #0ff;
+  box-shadow: 0 0 8px #00ffff80;
+}
+
+.input-field::placeholder {
+  color: #888;
+}
+
+.input-field:disabled {
+  background-color: #32323280;
+  color: #999;
+  cursor: not-allowed;
+  border-color: #444;
+}
+
+.textarea-field {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.select-field {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2300ffff' class='bi bi-chevron-down' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.select-field option {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+.file-input-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 18px;
+  background-color: #0000004d;
+  color: #0ff;
+  border: 1px dashed #0ff;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  transition: background-color .3s, border-style .3s, color .3s;
+  min-height: 54px;
+  box-sizing: border-box;
+}
+
+.file-input-label:hover:not(.disabled) {
+  background-color: #00ffff1a;
+  border-style: solid;
+}
+
+.file-input-label.disabled {
+  background-color: #32323280;
+  color: #777;
+  border-color: #555;
+  border-style: dashed;
+  cursor: not-allowed;
+  opacity: .7;
+}
+
+.file-input {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.preview-title {
+  font-family: Orbitron, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #0ff;
+  text-align: center;
+}
+
+.nft-preview {
+  width: 100%;
+  max-width: 320px;
+  max-height: 320px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #0ff9;
+  object-fit: contain;
+  background-color: #0000004d;
+  box-shadow: 0 0 10px #0ff3;
+}
+
+.media-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 90%;
+  max-width: 300px;
+  background-color: #ffffff0d;
+  border-radius: 8px;
+  border: 1px dashed #aaa;
+  color: #aaa;
+  text-align: center;
+  font-size: .9rem;
+  padding: 15px;
+}
+
+.media-loading .loading-spinner {
+  margin: 0 0 10px;
+}
+
+.btn {
+  font-family: Orbitron, sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .3s;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+  min-height: 56px;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-2px)scale(1.02);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(0)scale(1);
+}
+
+.create-btn {
+  background: linear-gradient(90deg, #8a2be2, #00bfff);
+  color: #fff;
+}
+
+.create-btn:hover:not(:disabled) {
+  box-shadow: 0 0 15px #8a2be280, 0 0 15px #00bfff80;
+}
+
+.create-btn:disabled {
+  background: linear-gradient(90deg, #5d1d9a, #0080aa);
+}
+
+.ai-btn {
+  background: none;
+  border: 1px solid #0ff;
+  color: #0ff;
+}
+
+.ai-btn:hover:not(:disabled) {
+  background: #00ffff1a;
+  box-shadow: 0 0 10px #0ff6;
+}
+
+.ai-btn:disabled {
+  border-color: #555;
+  color: #777;
+  background: none;
+}
+
+.loading-spinner {
+  border: 4px solid #ffffff4d;
+  border-radius: 50%;
+  border-top-color: #fff;
+  width: 20px;
+  height: 20px;
+  animation: 1s linear infinite spin;
+  flex-shrink: 0;
+}
+
+.small-spinner {
+  width: 16px;
+  height: 16px;
+  border-width: 3px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (width <= 850px) {
+  .content-wrapper {
+    padding: 25px 30px;
+  }
+
+  .form-preview-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .form-preview-wrapper .form-section, .form-preview-wrapper.has-preview .form-section, .form-preview-wrapper.has-preview .preview-section {
+    flex-basis: auto;
+    max-width: 100%;
+  }
+
+  .form-preview-wrapper.has-preview .preview-section {
+    opacity: 1;
+    min-height: 350px;
+  }
+
+  .nft-preview {
+    max-width: 90%;
+    max-height: 280px;
+  }
+
+  .create-title {
+    font-size: 2rem;
+  }
+}
+
+@media (width <= 500px) {
+  .create-container {
+    padding: 20px 15px;
+  }
+
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  .create-title {
+    font-size: 1.8rem;
+  }
+
+  .input-field, .file-input-label {
+    padding: 12px 15px;
+    font-size: .9rem;
+  }
+
+  .btn {
+    padding: 14px 20px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+
+  .connect-btn {
+    font-size: .9rem;
+    padding: 8px 18px;
+  }
+
+  .preview-title {
+    font-size: 1.2rem;
+  }
+
+  .media-placeholder {
+    height: 200px;
+  }
+
+  .nft-preview {
+    max-height: 240px;
+  }
+}
+
+/*# sourceMappingURL=src_app_createNFT-manually_createNFT_b52d8e88.css.map*/

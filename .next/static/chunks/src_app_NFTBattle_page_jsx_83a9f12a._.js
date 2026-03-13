@@ -1,0 +1,16 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
+    "static/chunks/src_app_NFTBattle_page_jsx_83a9f12a._.js",
+    {},
+]);
+(globalThis.TURBOPACK_CHUNK_LISTS = globalThis.TURBOPACK_CHUNK_LISTS || []).push({
+  "path": "static/chunks/src_app_NFTBattle_page_jsx_83a9f12a._.js",
+  "chunks": [
+    "static/chunks/src_3e0fc4ea._.js",
+    "static/chunks/node_modules_ethers_lib_esm_abi_b5bc55b4._.js",
+    "static/chunks/node_modules_ethers_lib_esm_providers_a657559a._.js",
+    "static/chunks/node_modules_ethers_lib_esm_bc853306._.js",
+    "static/chunks/node_modules_@noble_curves_esm_cf8dbd06._.js",
+    "static/chunks/node_modules_8baae9b8._.js"
+  ],
+  "source": "dynamic"
+});
